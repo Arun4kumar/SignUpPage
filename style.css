@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+}
+
+.contain {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contain > table {
+  margin-top: 100px;
+  align-self: flex-start;
+}
+
+.funcContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.alig,
+table {
+  width: 50%;
+  margin: 20px;
+}
+
+@media screen and (max-width: 850px) {
+  .contain {
+    flex-direction: column;
+  }
+  .card {
+    width: 80%;
+  }
+  .table {
+    margin: 0;
+  }
+
+  .funcContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .funcContainer > button {
+    width: 100%;
+  }
+}
